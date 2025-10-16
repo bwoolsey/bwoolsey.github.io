@@ -6,7 +6,7 @@
   <title>Being here. | Blake Woolsey</title>
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;600&family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
 
   <style>
     /* Reset and base */
@@ -17,7 +17,7 @@
     }
 
     body {
-      background-color: #f8f8f8; /* off-white frame background */
+      background-color: #f8f8f8;
       font-family: 'Lato', sans-serif;
       display: flex;
       flex-direction: column;
@@ -40,7 +40,15 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 5vh 5vw; /* inset frame around image */
+      padding: 5vh 5vw;
+      opacity: 0;
+      animation: fadeIn 1.8s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
     }
 
     .image-container {
@@ -57,21 +65,28 @@
       text-align: center;
       border-radius: 8px;
       overflow: hidden;
+      padding: 0 2rem;
     }
 
     h1 {
-      font-size: 4rem;
-      font-weight: 700;
-      margin-bottom: 1.2rem;
-      color: #f2f2f2;
-      text-shadow: 0 3px 6px rgba(0,0,0,0.5);
+      font-size: 3.6rem;
+      font-weight: 600;
+      margin-bottom: 1.1rem;
+      color: #ededed;
+      letter-spacing: -0.5px;
+      line-height: 1.1;
+      text-shadow: 0 2px 5px rgba(0, 0, 0, 0.35);
+      transition: all 0.3s ease;
     }
 
     p {
-      font-size: 1.5rem;
-      font-weight: 300;
-      color: #e5e5e5;
-      text-shadow: 0 2px 5px rgba(0,0,0,0.4);
+      font-size: 1.6rem;
+      font-weight: 400;
+      color: #f4f4f4;
+      line-height: 1.4;
+      text-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.35);
+      max-width: 800px;
+      transition: all 0.3s ease;
     }
 
     footer {
@@ -89,12 +104,15 @@
         font-size: 1.2rem;
         padding: 1.5rem 0 0.5rem;
       }
+
       h1 {
         font-size: 2.8rem;
       }
+
       p {
         font-size: 1.2rem;
       }
+
       .image-container {
         height: 70vh;
       }
