@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Being here. | Blake Woolsey</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+  <style>
+    /* Reset and base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #f8f8f8; /* off-white frame background */
+      font-family: 'Lato', sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      color: white;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 5vh 5vw; /* inset frame around image */
+    }
+
+    .image-container {
+      position: relative;
+      width: 100%;
+      height: 80vh;
+      background-image: url('foggy_forest.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.4);
+    }
+
+    p {
+      font-size: 1.25rem;
+      font-weight: 300;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.4);
+    }
+
+    footer {
+      background-color: #000;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 1rem 0;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+      .image-container {
+        height: 70vh;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <div class="image-container">
+      <h1>Being here.</h1>
+      <p>Because I can. Because it's mine.</p>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 BLAKE WOOLSEY – ALL RIGHTS RESERVED
+  </footer>
+</body>
+</html>
