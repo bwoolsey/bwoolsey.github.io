@@ -6,7 +6,7 @@
   <title>Being here. | Blake Woolsey</title>
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
 
   <style>
     /* Reset and base */
@@ -23,6 +23,16 @@
       flex-direction: column;
       min-height: 100vh;
       color: white;
+    }
+
+    header {
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      font-size: 1.5rem;
+      color: #222;
+      padding: 2rem 0 1rem;
+      letter-spacing: 2px;
     }
 
     main {
@@ -50,34 +60,40 @@
     }
 
     h1 {
-      font-size: 3rem;
+      font-size: 4rem;
       font-weight: 700;
-      margin-bottom: 1rem;
-      text-shadow: 0 2px 4px rgba(0,0,0,0.4);
+      margin-bottom: 1.2rem;
+      color: #f2f2f2;
+      text-shadow: 0 3px 6px rgba(0,0,0,0.5);
     }
 
     p {
-      font-size: 1.25rem;
+      font-size: 1.5rem;
       font-weight: 300;
-      text-shadow: 0 2px 4px rgba(0,0,0,0.4);
+      color: #e5e5e5;
+      text-shadow: 0 2px 5px rgba(0,0,0,0.4);
     }
 
     footer {
       background-color: #000;
       color: #f2f2f2;
-      text-align: center;
-      padding: 1rem 0;
+      text-align: left;
+      padding: 1rem 2rem;
       font-family: 'Montserrat', sans-serif;
       font-size: 0.9rem;
       letter-spacing: 1px;
     }
 
     @media (max-width: 768px) {
+      header {
+        font-size: 1.2rem;
+        padding: 1.5rem 0 0.5rem;
+      }
       h1 {
-        font-size: 2.2rem;
+        font-size: 2.8rem;
       }
       p {
-        font-size: 1rem;
+        font-size: 1.2rem;
       }
       .image-container {
         height: 70vh;
@@ -87,6 +103,10 @@
 </head>
 
 <body>
+  <header>
+    BLAKE WOOLSEY
+  </header>
+
   <main>
     <div class="image-container">
       <h1>Being here.</h1>
