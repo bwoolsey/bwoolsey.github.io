@@ -1,0 +1,164 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+body {
+  background-color: #ece8e1;
+  color: #333;
+  font-family: 'Lato', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #222;
+  padding: 2rem 0 1rem;
+  letter-spacing: 2px;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding: 5vh 5vw;
+  opacity: 0;
+  animation: fadeIn 1.8s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.content-container {
+  width: 100%;
+  max-width: 900px;
+  background: #f4f1eb;
+  padding: 4rem;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.04);
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 2rem;
+  letter-spacing: -0.5px;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #222;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 1.5rem;
+}
+
+a {
+  color: #444;
+  text-decoration: none;
+  border-bottom: 1px solid #bbb;
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  color: #000;
+  border-bottom-color: #000;
+}
+
+.meta {
+  font-size: 0.95rem;
+  color: #777;
+  margin-bottom: 3rem;
+  letter-spacing: 0.5px;
+}
+
+footer {
+  background-color: #000;
+  color: #f2f2f2;
+  text-align: left;
+  padding: 1rem 2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+  header {
+    font-size: 1.2rem;
+    padding: 1.5rem 0 0.5rem;
+  }
+
+  .content-container {
+    padding: 2rem;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+
+.site-nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.site-nav a {
+  color: #444;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: opacity 0.25s ease;
+}
+
+.site-nav a:hover {
+  opacity: 0.6;
+}
+
+
+@media (max-width: 768px) {
+
+  .site-nav {
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+  }
+
+  .site-nav a {
+    font-size: 0.9rem;
+  }
+
+}
+
+.content-container img {
+  width: 100%;
+  border-radius: 8px;
+  margin: 2rem 0;
+  display: block;
+}
